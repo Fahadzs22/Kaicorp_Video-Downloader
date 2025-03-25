@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video & Subtitle Downloader</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button, select { margin: 10px; padding: 10px; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+    <h2>Paste Video Link</h2>
+    <input type="text" id="videoUrl" placeholder="Enter video URL">
+    <button onclick="fetchMedia()">Get Download Links</button>
+
+    <h3>Choose Video Quality:</h3>
+    <select id="videoSelect"></select>
+    <button onclick="downloadVideo()">Download Video</button>
+
+    <h3>Choose Subtitle:</h3>
+    <select id="subtitleSelect"></select>
+    <button onclick="downloadSubtitle()">Download Subtitles</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
